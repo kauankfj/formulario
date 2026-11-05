@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Galeria </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- icone -->
+         <div class="icone">
+            <img src="./painting-girl-with-a-pearl-earring-artist-jan-vermeer-parody-free-vector.jpg" alt="icone menina do brinco de perolas">
+         </div>
+         <h1>Garanta Seu Ingresso</h1>
+         <p>Preencha o Formulario para ter acesso ao ticket exclusivo</p>
+
+         <!-- CAMPO DE NOME -->
+         <form id="formulario">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome..." required>
+
+            <!-- CAMPO DE EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Digite Seu Email..." required id="email">
+
+             <!-- CAMPO DE TELEFONE -->
+          <label for="telefone">Numero de Telefone</label>
+          <input type="tel" placeholder="(11) 99999-9999" id="telefone">
+
+          <!-- CAMPO DE LOCAIS -->
+            <label for="local">Localidades</label>
+            <select id="localidade" required>
+            <option value="">Selecione Uma Opção</option>
+            <option value="espanha">Madrid (Espanha)</option>
+            <option value="Italia">Roma (Italia)</option>
+            <option value="japão">Osaka (Japão)</option>
+            <option value="china">Hong Kong (China)</option>
+          </select>
+
+          <!-- CAMPO DE OBSERVAÇÕES-->
+           <label for="mensagem">Observações</label>
+           <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+           <button type="submit">
+            Enviar Solicitação
+           </button>
+         </form>
+
+        
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
